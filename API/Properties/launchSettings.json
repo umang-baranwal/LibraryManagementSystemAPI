@@ -1,0 +1,65 @@
+﻿//{
+//  "$schema": "http://json.schemastore.org/launchsettings.json",
+//  "iisSettings": {
+//    "windowsAuthentication": false,
+//    "anonymousAuthentication": true,
+//    "iisExpress": {
+//      "applicationUrl": "http://localhost:41325",
+//      "sslPort": 44333
+//    }
+//  },
+//  "profiles": {
+//    "http": {
+//      "commandName": "Project",
+//      "dotnetRunMessages": true,
+//      "launchBrowser": true,
+//      "launchUrl": "swagger",
+//      "applicationUrl": "http://localhost:5152",
+//      "environmentVariables": {
+//        "ASPNETCORE_ENVIRONMENT": "Production"
+//      }
+//    },
+//    "https": {
+//      "commandName": "Project",
+//      "dotnetRunMessages": true,
+//      "launchBrowser": false,
+//      "launchUrl": "swagger",
+//      "applicationUrl": "https://localhost:7197;http://localhost:5152",
+//      "environmentVariables": {
+//        "ASPNETCORE_ENVIRONMENT": "Production"
+//      }
+//    },
+//    "IIS Express": {
+//      "commandName": "IISExpress",
+//      "launchBrowser": true,
+//      "launchUrl": "swagger",
+//      "environmentVariables": {
+//        "ASPNETCORE_ENVIRONMENT": "Production"
+//      }
+//    }
+//  }
+//}
+
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": true,  // Set to true if needed
+    "anonymousAuthentication": false,  // Set to false for increased security
+    "iisExpress": {
+      "applicationUrl": "http://localhost:5001", // Change to your production URL
+      "sslPort": 443 // Change to your production SSL port
+    }
+  },
+  "profiles": {
+    "production": {
+      "commandName": "Project",
+      "dotnetRunMessages": false,
+      "launchBrowser": false, // Set to false in production
+      "launchUrl": "swagger", // Change to the default URL you want to launch
+      "applicationUrl": "https://localhost:5000;http://localhost:5001", // Change to your production URL
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production" // Change to "Production" in production
+      }
+    }
+  }
+}
